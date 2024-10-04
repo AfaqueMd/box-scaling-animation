@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 18rem;
+            height: 18rem;
+            margin: auto;
+            margin-top: 12%;
+            border: 3px;
+            border-radius: 5px;
+            border-style: inset;
+            border-color: rgb(84, 18, 145);
+            box-shadow: #f784f18f 0px 5px 55px, #f784f18f 0px 0px 1px, #f784f18f 0px 1px 2px, #d300c88f 0px 1px 0px, #e799e38f 0px -1px 0px;
+            animation: scaler 1s  infinite;
+        }
+        @keyframes scaler {
+            0%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            70%{
+                opacity: .8;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+                box-shadow: #f784f18f 0px 0px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
